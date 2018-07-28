@@ -72,8 +72,8 @@ public class Window: Bin {
 }
 
    public func enterFullScreen() {
-        gtk_window_fullscreen()
+        gtk_window_fullscreen(UnsafePointer)
     }
     public func exitFullScreen() {
-        gtk_window_unfullscreen()
+        gtk_window_unfullscreen(UnsafePointer)
     }
