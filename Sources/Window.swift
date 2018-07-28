@@ -72,8 +72,8 @@ public class Window: Bin {
 }
 
    public func enterFullScreen() {
-        gtk_window_fullscreen(castedPointer())
+        gtk_window_fullscreen(castedPointer().toBool())
     }
     public func exitFullScreen() {
-        gtk_window_unfullscreen(castedPointer())
+        gtk_window_unfullscreen(castedPointer().toBool())
     }
